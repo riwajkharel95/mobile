@@ -22,7 +22,7 @@ public class BikeTest {
                     String[] fields = pattern.split(s);
                     return new Bike(Integer.parseInt(fields[0]), fields[1], fields[2], Integer.parseInt(fields[3]), Integer.parseInt(fields[4]), fields[5]);
                 })
-                .collect(Collectors.groupingBy(Bike::getModel , Collectors.counting()));
+                .collect(Collectors.groupingBy(Bike::getModel, Collectors.counting()));
         bikes
                 .entrySet()
                 .stream()
@@ -31,11 +31,11 @@ public class BikeTest {
                 .forEach(System.out::println);
 
         Map<String, Integer> expected = new HashMap<String, Integer>();
-        expected.put("ec 5",4);
-        expected.put("beryll",3);
-        expected.put("et 9 evo",2);
+        expected.put("ec 5", 4);
+        expected.put("beryll", 3);
+        expected.put("et 9 evo", 2);
 
-        Assert.assertEquals(expected,bikes);
+        Assert.assertEquals(expected, bikes);
 
 
     }
