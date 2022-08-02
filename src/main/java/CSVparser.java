@@ -11,6 +11,7 @@ public class CSVparser {
 
         Pattern pattern = Pattern.compile(",");
 
+        // Parsing the csv data into map data structure
         Map<String, Long> bikes = Files.lines(Paths.get("src/main/resources/data.csv"))
                 .skip(1)
                 .map(s -> {
@@ -20,6 +21,7 @@ public class CSVparser {
                 .collect(Collectors.groupingBy(Bike::getModel , Collectors.counting()));
 
 
+        // Counting every model in the data
         System.out.println("The count of all models");
         bikes
                 .entrySet()
@@ -27,6 +29,7 @@ public class CSVparser {
                 .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
                 .forEach(System.out::println);
 
+        // Count of the top 5 most sold bike
         System.out.println("The count of all the top 3 models");
         bikes
                 .entrySet()
