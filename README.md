@@ -5,6 +5,12 @@ Once you run the main function of CSVparser it will run and print all the model 
 models in the console. The models that are most advertised are EC-5, Beryll, ET-9 EVO and dirt drifter 3000.
 Additionally, i have also create a junit test for validation. 
 
+Model Top 3 Count
+EC-5 = 4
+Beryll = 3
+ET-9 EVO = 2
+dirt drifter 3000 = 2
+
 Steps
 1. Unzip the file
 2. Import the pom.xml and project

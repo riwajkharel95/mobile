@@ -51,6 +51,4 @@ public class Bike {
                 ", date='" + date + '\'' +
                 '}';
     }
-
-
 }
