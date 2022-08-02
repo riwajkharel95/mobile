@@ -19,6 +19,7 @@ public class CSVparser {
                 })
                 .collect(Collectors.groupingBy(Bike::getModel , Collectors.counting()));
 
+
         System.out.println("The count of all models");
         bikes
                 .entrySet()
