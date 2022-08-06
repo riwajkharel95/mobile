@@ -1,6 +1,6 @@
-## The bike challenge
+## The bike csv parser
 
-Thank you for the challenge. I have used Java stream API to create a backend service to parse and solve this problem.
+I have used Java stream API to create a backend service to parse and solve this problem.
 Once you run the main function of CSVparser it will run and print all the model counts and the top 3 
 models in the console. The models that are most advertised are EC-5, Beryll, ET-9 EVO and dirt drifter 3000.
 Additionally, i have also create a junit test for validation. 
